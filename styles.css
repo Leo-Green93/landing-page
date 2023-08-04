@@ -2,15 +2,27 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-family: tahoma
 }
 
-header {
+.header {
     font-size: 24px;
-    color: #f9faf8
+    color: #f9faf8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
 }
 
 .hero {
     background-color: #1F2937;
+}
+
+.hero-content {
+    display: flex;
 }
 
 .hero .main-text {
@@ -22,11 +34,68 @@ header {
 .hero-img {
     width: 300px;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px;
+    border: none;
+   
 }
 
 .hero .secondary-text, .header-link {
     font-size: 18px;
     color: #e5e7eb;
+}
+
+button {
+    background-color: #3882f6;
+    color: #e5e7eb;
+    border: none;
+}
+
+.information-header {
+    text-align: center;
+    font-size: 36px;
+    font-weight: extra-bold;
+    color: #1f2937;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.img-subtext {
+    text-align: center;
+    font-size: 12px;
+    margin: 0px 75px;
+    flex: 1;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #3882f6;
+    border-radius: 15%;
+}
+
+.mars,
+.saturn,
+.jupiter,
+.earth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.quote-section {
+    background-color: #e5e7eb;
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
 }
 
 footer {
